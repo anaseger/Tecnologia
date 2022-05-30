@@ -1,0 +1,217 @@
+body {
+	font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+    background-color: black;
+}
+.menu  {  
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+.menu a {
+    display: flex;
+    margin-right: 20px;
+    padding :  10px;
+    padding: 5px;
+    transform:scale(1.3) ;
+}
+.menu a:hover {
+    -webkit-transform: scale(1.1);
+   transform: scale(1.5);
+}
+header { 
+    background-image: url(/img/tentativa.jpg);
+    margin-bottom: 40px;      
+}
+nav {
+    display: flex;
+    height: 50px;
+    background-color: #fff;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav a{
+    padding: 10px 50px;
+    color: black; 
+    font-size: 18px;
+    text-decoration: none;     
+}
+nav a:hover{
+    color: purple;
+    font-weight: bold;
+}
+.p1 {
+    padding: auto;
+}
+.aquecimento {
+    margin:auto;
+    padding: 20px;
+    width: 60%;    
+    border-radius: 10px;
+    display: flex;
+}
+.aquecimento img{ 
+	width: 200px;  
+    height: 200px;
+    text-align: center;
+    margin-left: 20px; 
+}
+.aquecimento #title{ 
+	font-size: 32px;   
+    text-align: justify;   
+}
+.aquecimento #texto{
+    font-size: 22px;
+    margin: 15px 0;
+    text-align: justify;
+    line-height: 1.3;   
+}
+#fd{
+    background-image: url(/img/esse.jpg);
+    width: auto;
+    height: 500px;
+}
+#fd .video{   
+    background-color: rgba(255, 255, 255, 0.219);
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cont {
+    margin:auto;
+    width: 60%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.185);
+    border-radius: 10px;
+}
+.cont p {
+    text-shadow: 1px 1px 3px black;
+    font-size: 40px;
+    color: purple;
+    border: 4px black;
+    padding: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.cont .cadastro{
+    font-size: 22px;
+    margin: 15px ;
+    padding:  10px;
+    line-height: 1.3;  
+}
+form{ 
+    padding: 0px 20px;
+    display: flex;
+    color: white;
+    border-radius: 10px;
+    font-size: 22px;
+    flex-direction: column;
+}
+form input{
+    font-size: 22px;
+    color: white;
+    background-color: transparent;
+    border-color: wheat;
+    border-radius: 8px;
+    padding: 1px;
+}
+form #diferente{
+    font-size: 22px;
+    color: white;
+    background-color: black;
+    border-color: purple;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 80px;
+}
+form #diferente:hover{
+    color: black;
+    background-color: whitesmoke;
+}
+/*slide*/
+.content{
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+.navegation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+.bar{
+    width: 70px;
+    height: 17px;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 150px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+.bar:hover{
+    background-color: #fff;
+}
+.a2{
+    display: none;
+}
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+.slide{
+    width: 20%;
+    transition: .6s;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+#slide1:checked ~.s1{
+    margin-left: 0;
+}
+#slide2:checked ~.s1{
+    margin-left: -20%;
+}
+#slide3:checked ~.s1{
+    margin-left: -40%;
+}
+#slide4:checked ~.s1{
+    margin-left: -60%;
+}
+#slide5:checked ~.s1{
+    margin-left: -80%;
+}
+/*star*/  
+.p2 {
+    padding: 40px 20px;   
+}
+.p2 #star {
+   margin: 20px;
+}
+.p2 #star h1{
+    margin: 20px;
+    display: flex;
+    text-shadow: 3px 3px 3px black;
+    font-size: 80px;
+    color:#fff;
+    text-align: left;
+    width: 100%;
+   
+}
+
+
+
+/*barra de rolagem*/
+*::-webkit-scrollbar {
+    width: 4px;
+    background-color: rgb(63, 82, 82);
+} 
+*::-webkit-scrollbar-thumb {
+    background-color: purple;
+    border-radius: 20px;
+}
+
