@@ -1,0 +1,351 @@
+body {
+	font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+    background-color: black;
+}
+.menu  {  
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+.menu a {
+    display: flex;
+    margin-right: 20px;
+    padding :  10px;
+    padding: 5px;
+    transform:scale(1.3) ;
+}
+.menu a:hover {
+    -webkit-transform: scale(1.1);
+   transform: scale(1.5);
+}
+header { 
+    background-image: url(/img/header.jpg);
+    margin-bottom: 40px;     
+}
+nav {
+    display: flex;
+    height: 50px;
+    background-color: #fff;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav a{
+    padding: 10px 50px;
+    color: black; 
+    font-size: 18px;
+    text-decoration: none;     
+}
+nav a:hover{
+    color: purple;
+    font-weight: bold;
+}
+main{
+    margin-bottom: 20px;
+}
+
+.aquecimento {
+    margin:auto;
+    padding: 5px;
+    width: 80%;    
+    border-radius: 10px;
+    display: flex;
+}
+.aquecimento img{ 
+	width: 200px;  
+    height: 200px;
+    text-align: center;
+    margin-left: 20px; 
+}
+.aquecimento #title{ 
+	font-size: 32px;   
+    text-align: justify;   
+}
+.aquecimento #texto{
+    font-size: 22px;
+    margin: 15px 0;
+    text-align: justify;
+    line-height: 1.3;   
+}
+#fd{
+    background-image: url(/img/video.jpg);
+    width: auto;
+    height: 500px;
+}
+#fd .video{   
+    background-color: rgba(255, 255, 255, 0.219);
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#fd .video #vd{
+    width: 80%;
+}
+.cont {
+    margin:auto;
+    width: 60%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.185);
+    border-radius: 10px;
+}
+.cont p {
+    text-shadow: 1px 1px 3px black;
+    font-size: 40px;
+    color: purple;
+    border: 4px black;
+    padding: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.cont .cadastro{
+    font-size: 22px;
+    margin: 15px ;
+    padding:  10px;
+    line-height: 1.3;  
+}
+form{ 
+    padding: 0px 20px;
+    display: flex;
+    color: white;
+    border-radius: 10px;
+    font-size: 22px;
+    flex-direction: column;
+}
+form input{
+    font-size: 22px;
+    color: white;
+    background-color: transparent;
+    border-color: wheat;
+    border-radius: 8px;
+    padding: 1px;
+}
+form #diferente{
+    font-size: 22px;
+    color: white;
+    background-color: black;
+    border-color: purple;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 80px;
+}
+form #diferente:hover{
+    color: black;
+    background-color: whitesmoke;
+}
+/*slide*/
+.content{
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+.content .navegation{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    top: 300px;
+    justify-content: center;
+}
+.bar{
+    width: 70px;
+    height: 17px;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 150px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+    text-align: center;
+    display: flex;
+}
+.bar:hover{
+    background-color: #fff;
+}
+.a2{
+    display: none;
+}
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+.slide{
+    width: 20%;
+    transition: .6s;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+#slide1:checked ~.s1{
+    margin-left: 0;
+}
+#slide2:checked ~.s1{
+    margin-left: -20%;
+}
+#slide3:checked ~.s1{
+    margin-left: -40%;
+}
+#slide4:checked ~.s1{
+    margin-left: -60%;
+}
+#slide5:checked ~.s1{
+    margin-left: -80%;
+}
+/*star*/  
+.p2 {
+    margin: 20px;   
+}
+.p2 #star {
+    background-color: rgba(255, 255, 255, 0.105);
+    border-radius: 10px;
+    padding: 10px;
+}
+.p2 #star h1{
+    display: flex;
+    text-shadow: 3px 3px 3px black;
+    font-size: 80px;
+    color:#fff;
+    text-align: left;
+    width: 100%;   
+    justify-content: space-evenly;
+}
+.p2 #star .texto{
+    margin: 20px ;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.3; 
+}
+.p2 #star .sub{
+    margin-top: 30px;
+    text-shadow: 1px 1px 1px purple;
+    margin-bottom: 10px;
+    color:#fff;
+    font-size: 20px;
+    text-align: left;
+    width: 100%;   
+}
+.p3{
+    margin: 40px 20px;
+    border-radius: 10px;
+    padding: 10px
+}
+.p3 h2{
+    display: flex;
+    margin: 10px 0px;
+    text-shadow: 3px 3px 3px black;
+    font-size: 50px;
+    color:#fff;
+    text-align: justify;
+    width: 100%; 
+    justify-content: center;
+}
+.p3 p{
+    display: flex;
+    font-size: 25px;
+    color:#fff;
+    text-align: justify;
+    width: 100%; 
+    line-height: 1,3;
+}
+/*biografia*/
+.biografia{
+    margin: 20px;
+}
+.bio{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color:#fff;
+    font-size: 30px;
+    text-align: left;
+    width: 100%;   
+}
+.biografia p{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    line-height: 1.3; 
+    color:#fff;
+    font-size: 27px;
+    text-align: left;
+    width: 100%;  
+}
+.biografia a {
+    font-size: 12px;
+    color: purple;
+}
+#n2 {
+    display: flex;
+    height: 50px;
+    justify-content: flex-end;
+    align-items: center; 
+}
+#n2 a{
+    padding: 10px 50px;
+    color: purple; 
+    font-size: 18px;
+    text-decoration: none;     
+}
+#n2 a:hover{
+    font-weight: bold;
+}
+
+/*barra de rolagem*/
+*::-webkit-scrollbar {
+    width: 4px;
+    background-color: rgb(63, 82, 82);
+} 
+*::-webkit-scrollbar-thumb {
+    background-color: purple;
+    border-radius: 20px;
+}
+@media (max-width: 540px) {  
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    nav a{
+        font-size: 15px;
+        display: flex;
+        padding: 10px 20px;
+    }
+    .aquecimento {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .p2 #star h1{
+        font-size: 32px
+    }
+    .p3 #t2 {
+        margin: 5px;
+    } 
+    .p3 #t2 h2{
+        font-size: 40px;
+    }
+	.p3 #t2 p{
+        font-size: 20px;
+    }	 
+}
+
+footer { 
+    background-image: url(/img/header.jpg);
+    height: 100%;
+}
+.git{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.git a{
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+.git p{
+    display: flex;
+    color: #fff;
+    font-size: 20px;
+    align-items: center;
+}
+
