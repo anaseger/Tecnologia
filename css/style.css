@@ -328,14 +328,14 @@ form #diferente:hover{
 }
 
 footer { 
-    background-image: url(/img/header.jpg);
+    background-image: url(/img/footer.jpg);
     height: 100%;
 }
 .git{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    
 }
 .git a{
     display: flex;
